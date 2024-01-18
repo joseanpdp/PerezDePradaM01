@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFrag">
+
+    <fragment
+        android:id="@+id/homeFrag"
+        android:name="com.vedruna.perezpradam01.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_counterFragment"
+            app:destination="@id/counterFrag" />
+        <action
+            android:id="@+id/action_homeFragment_to_logoutFragment"
+            app:destination="@id/logoutFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/counterFrag"
+        android:name="com.vedruna.perezpradam01.counterFragment"
+        android:label="fragment_counter"
+        tools:layout="@layout/fragment_counter" />
+    <fragment
+        android:id="@+id/logoutFrag"
+        android:name="com.vedruna.perezpradam01.logoutFragment"
+        android:label="fragment_logout"
+        tools:layout="@layout/fragment_logout" />
+</navigation>
