@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_homeFragment_to_logoutFragment"
             app:destination="@id/logoutFrag" />
+        <action
+            android:id="@+id/action_homeFrag_to_apiFragment"
+            app:destination="@id/apiFrag" />
     </fragment>
     <fragment
         android:id="@+id/counterFrag"
@@ -27,4 +30,9 @@
         android:name="com.vedruna.perezpradam01.logoutFragment"
         android:label="fragment_logout"
         tools:layout="@layout/fragment_logout" />
+    <fragment
+        android:id="@+id/apiFrag"
+        android:name="com.vedruna.perezpradam01.ApiFragment"
+        android:label="fragment_api"
+        tools:layout="@layout/fragment_api" />
 </navigation>

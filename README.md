@@ -1,10 +1,10 @@
 # ANDROID
-# Tarea 3
+# Tarea 4
 - **Autor**: *José Antonio Pérez de Prada*
 - **Asignatura**: Multimedia
 
 ## Enunciado
-Cambia el proyecto para que el segundo activity en vez de ser el contador sea un activity con un FrameLayout en el que se verán los diferentes fragments (mínimo home, contador, salir) y por otra parte una barra de navegación con la que podamos viajar entre los diferentes fragments.
+Añade un Fragment mas que se llame API y sigue el tutorial (para la parte del consumo de la API) proporcionado para consumir un API con android(en esta entrega no tendrás que reflejar los resultado en la interfaz gráfica, solo en el log). Por otro lado crea un microservicio con una sola entidad.
 
 ## Resultado
 ### Ventanas
@@ -30,18 +30,32 @@ Esta es la ventana que se mostrará tras introducir correctamente el nombre y la
 
 - El **bottomNavigationView** es el encargado de que podamos visualizar los fragments. Dicho de otra forma, es el encargado de que podamos cambiar de un fragment a otro.
 
-Cuando pulsamos alguna de las dos otras opciones del **bottomNavigationView** podemos a ir a laguna de estos fragments:
+Cuando pulsamos alguna de las dos otras opciones del **bottomNavigationView** podemos a ir a alguna de estos fragments:
 
-### Con el votón de Counter:
+### Con el botón de Counter:
 ![](resourcesReadme/toCounter.png)
 
 ![](resourcesReadme/counterFragment.png)
 
 El contador sigue sin hacer nada, pero en este caso lo que hemos hecho es cambiarlo de una actividad a un fragment.
 
-### Con el votón de Logout:
+### Con el botón de Logout:
 ![](resourcesReadme/toLogout.png)
 
 ![](resourcesReadme/logoutFragment.png)
 
 Este fragment es como el fragment de Home, pero en el caso de que fuera una aplicación realista, este fragment mostraría la opción de poder salir de la aplicación pulsando un botón.
+
+### ACTUALIZACIÓN DEL EJERCICIO 4
+
+### Con el botón de API
+
+![](resourcesReadme/toApi.png)
+
+![](resourcesReadme/apiFragment.png)
+
+En este fragment, al igual que en Home y en Logout solo se muestra un texto que, en este caso, es el nombre del método que permite obtener la lista de los productos de la api.
+
+Al pulsarse el botón de **API** se inicia el evento que permite obtener de la API los datos de todos los productos registrados que, en este caso, son los siguientes:
+
+![](resourcesReadme/apiLogs.png)
